@@ -1,3 +1,4 @@
 docker pull postgres
 docker run --name postgre-test -p 5432:5432 -e POSTGRES_PASSWORD=170116Abc -d postgres
 docker exec postgre-test psql -U postgres -f /root/pgsql-script/Inital.sql
+docker exec postgre-test psql -U postgres -d mockup -f /root/pgsql-script/data-mockup-persons.sql
