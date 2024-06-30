@@ -1,7 +1,7 @@
 CREATE DATABASE "mockup";
 \c mockup;
 CREATE TABLE persons (
-    person_id int,
+    person_id uuid,
     email varchar(255),
     last_name varchar(255),
     first_name varchar(255),
@@ -9,3 +9,4 @@ CREATE TABLE persons (
     city varchar(255),
     PRIMARY KEY (person_id, email)
 );
+
